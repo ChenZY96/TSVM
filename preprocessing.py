@@ -89,8 +89,8 @@ abnormal_data.to_csv('train_abnormal.csv',index=None)
 #test_data.to_csv('test_data.csv',index=None)
 
 # final training_data for SSL
-df1 = pd.read_csv('normal.csv')
-df2 = pd.read_csv('abnormal.csv')
+df1 = pd.read_csv('train_normal.csv')
+df2 = pd.read_csv('train_abnormal.csv')
 
 train_data = pd.concat([df1,df2],axis=0,ignore_index=True)
 print('final training data:',len(train_data))
